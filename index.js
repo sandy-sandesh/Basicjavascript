@@ -689,8 +689,6 @@
 // }
 // myfunc();
 
-
-
 // function myfunc(){
 //     if (true) {
 //    var x = 90;
@@ -702,6 +700,7 @@
 //   console.log(x);
 // }
 // myfunc();
+
 
 
 
