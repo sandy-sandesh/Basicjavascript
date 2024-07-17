@@ -15,12 +15,12 @@
 // result = 6-4;
 // console.log(result);
 
-// // Data Types
+// Data Types
 // let x = 90;
 // console.log(x);
 // console.log(typeof x);
 
-//string
+// string
 // const result ="samuel";
 // console.log(result)
 // console.log(typeof a);
@@ -31,7 +31,7 @@
 // console.log(a);
 // console.log(typeof a);
 
-// // null(object)
+// null(object)
 // const y = null;
 // console.log(y);
 // console.log(typeof y)
@@ -64,7 +64,7 @@
 //  console.log(x);
 //  console.log(typeof x);
 
- // Boolean
+//  Boolean
 // const  isMarried  = false;
 // console.log(isMarried);
 // console.log(typeof isMarried);
@@ -101,7 +101,7 @@
 //     salary:45000,
 // };
 // console.log(obj);
-// // console.log(typeof obj);
+// console.log(typeof obj);
 
 // // Type conversion
 // const x = "123";
@@ -700,6 +700,8 @@
 //   console.log(x);
 // }
 // myfunc();
+
+
 
 
 
