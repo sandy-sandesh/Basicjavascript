@@ -653,7 +653,7 @@
 //     let b = prompt("Enter your number");
 //     let result = Number(a) + Number(b);
 //     if(result) {
-//         alert(`The sum of two numberis : ${result}`);
+//         alert(`The sum of two numberis: ${result}`);
 //     }
 // }
 //  myfunc();
@@ -703,6 +703,249 @@
 
 
 
+
+
+
+
+
+// //  DOM MANIPULATION
+// // console.log(document.body); to access body of html
+// // console.log(document.head): to access head of html
+
+// let result = document.getElementById("hello");
+// result.innerText= "I have a many Proof hudaina";
+// result.style.background = "red";
+// result.style.color ="white";
+// result.style.textAlign = "center";
+
+// result.setAttribute("class", "newclass");
+// console.log(result.getAttribute("class"));
+
+// let ans = document.getElementsByClassName ("myDiv")[0];
+// ans.innerHTML = "Haina k ho yesto yo Chakka Parchu";
+// ans.style.background = "yellow";
+// ans.style.color ="green";
+// ans.style.textAlign = "center";
+// ans.style.padding = "10px";
+
+// let output = document.getElementsByClassName("myDiv");
+// output[1].innerHTML = "Kinaki Nepal ma opportunities nai kaam chha";
+// output[1].style.background = "purple";
+// output[1].style.color ="white";
+// output[1].style.textAlign = "center";
+// output[1].style.padding = "10px";
+
+// let display = document.getElementsByTagName("span")[0];
+// display.innerText = "Nepalma Yiniharuki Raj Chha";
+// display.style.background = "yellow";
+// display.style.color = "black";
+
+// let show = document.getElementsByTagName("span");
+// show[1].innerText = "Bichar lekhchas computer ma gadi Kholama ani";
+// show[1].style.backgroundcolor="gray";
+// show[1].style.color = "red";
+
+// // let h2 =document.createElement("h2");
+// // h2.innerHTML= "Task 1"
+// // document.body.append(h2);
+
+// // let h2 =document.createElement("h2");
+// // h2.innerHTML= "Task 1"
+// // document.body.prepend(h2);
+
+// function AddTask(){
+//     let h2 = document.createElement("h2");
+//     h2.innerHTML = "Task 1";
+//     document.body.append(h2);
+// }
+
+// function RemoveTask(){
+//     let div = document.querySelector ("h2");
+//     div.remove();
+// }
+
+// let btnAdd = document.querySelector("#btnAdd");
+// btnAdd.style.backgroundColor= "blue";
+// btnAdd.style.color= "#fff";
+// btnAdd.style.padding = "20px";
+// btnAdd.style.border = "none";
+// btnAdd.style.cursor = "poiter";
+
+// btnAdd.onclick = AddTask;
+
+// let btnRemove = document.querySelectorAll("button")[1];
+// btnRemove.style.backgroundColor= "red";
+// btnRemove.style.color= "#fff";
+// btnRemove.style.padding = "20px";
+// btnRemove.style.border = "none";
+// btnRemove.style.cursor = "poiter";
+
+// btnRemove.onclick = RemoveTask;
+
+
+// ADVANCE ARRAY METHOD
+
+// // Tradition Way
+// function Add(a,b){
+//     let result = a+b;
+//     return result;
+// };
+
+// let output = Add(4,5);
+// console.log(output);
+
+// // Non Tradition Way
+// const Add = (a,b) => {
+//         let result = a+b;
+//         return result;
+//     };
+    
+//     let output = Add(4,5);
+//     console.log(output);
+
+// let arr = [4,5,2,3,7,8,9]
+// Find Method
+// let ans = arr.find ((value) => {
+//     let result = value > 7;
+//     return result;
+// });
+
+// console.log(ans);
+
+// let ans = arr.find((value) => value > 7);
+// console.log (ans);
+
+// const products = [
+//     {id:1,name:"Dr Martin", price:8000, inStock: true},
+//     {id:2,name:"Air Force 1", price:5000, inStock: true},
+//     {id:3,name:"Gold Star", price:80000, inStock: true},
+//     {id:4,name:"Martin", price:80000, inStock: true}];
+
+// let output = products.find((value)=> value.inStock);
+// console.log(output);
+
+// // FILTER
+// let arr = [4,5,2,3,7,8,9]
+// let ans = arr.filter((value) => value > 7);
+// console.log (ans);
+
+// const products = [
+//     {id:1,name:"Dr Martin", price:8000, inStock: true},
+//     {id:2,name:"Air Force 1", price:5000, inStock: true},
+//     {id:3,name:"Gold Star", price:2000, inStock: true},
+//     {id:4,name:"Nike", price:4000, inStock: false}];
+
+// let output = products.filter((value)=> !value.inStock);
+// console.log(output);
+
+// // SOME
+
+// let arr = [4,5,2,3,7,8,9]
+// let ans = arr.some((value) => value > 7);
+// console.log (ans);
+
+// const products = [
+//     {id:1,name:"Dr Martin", price:8000, inStock: true},
+//     {id:2,name:"Air Force 1", price:5000, inStock: false},
+//     {id:3,name:"Gold Star", price:2000, inStock: true},
+//     {id:4,name:"Nike", price:4000, inStock: false}];
+
+// let output = products.some((value)=> !value.inStock);
+// console.log(output);
+
+// // EVERY
+
+// let arr = [4,5,2,3,7,8,9]
+// let ans = arr.every((value) => value > 7);
+// console.log (ans);
+
+// const products = [
+//     {id:1,name:"Dr Martin", price:8000, inStock: true},
+//     {id:2,name:"Air Force 1", price:5000, inStock: false},
+//     {id:3,name:"Gold Star", price:2000, inStock: true},
+//     {id:4,name:"Nike", price:4000, inStock: false}];
+
+// let output = products.every((value)=> !value.inStock);
+// console.log(output);
+
+// // FOR EACH
+
+// let arr = [4,5,2,3,7,8,9]
+// let ans = arr.forEach((value) => value > 7);
+// console.log (ans);
+
+// const products = [
+//     {id:1,name:"Dr Martin", price:8000, inStock: true},
+//     {id:2,name:"Air Force 1", price:5000, inStock: false},
+//     {id:3,name:"Gold Star", price:2000, inStock: true},
+//     {id:4,name:"Nike", price:4000, inStock: false}];
+
+// let output = products.forEach((value)=> !value.inStock);
+// console.log(output);
+
+// // MAP
+
+// let arr = [4,5,2,3,7,8,9]
+// let ans = arr.map((value) => value > 7);
+// console.log (ans);
+
+// const products = [
+//     {id:1,name:"Dr Martin", price:8000, inStock: true},
+//     {id:2,name:"Air Force 1", price:5000, inStock: false},
+//     {id:3,name:"Gold Star", price:2000, inStock: true},
+//     {id:4,name:"Nike", price:4000, inStock: false}
+// ];
+
+// let output = products.map((value)=> value.name);
+// console.log(output);
+// let h1 = document.createElement("h1");
+// h1.innerHTML = output;
+// document.body.append(h1);
+
+// REDUCE
+
+// let arr = [4,5,2,3,7,8,9]
+// let ans = arr.reduce((accum, curValue) => accum+ curValue);
+// console.log (ans);
+
+// const products = [
+//     {id:1,name:"Dr Martin", price:8000, inStock: true},
+//     {id:2,name:"Air Force 1", price:5000, inStock: false},
+//     {id:3,name:"Gold Star", price:2000, inStock: true},
+//     {id:4,name:"Nike", price:4000, inStock: false},
+// ];
+
+// let output = products.reduce((total, curValue)=> total + curValue.price,0);
+// console.log(output);
+
+
+
+
+
+const heading  = document.getElementById("heading");
+const box1  = document.getElementById("box1");
+const addBTn  = document.getElementById("addBTn");
+ let input = document.getElementById("newInput");
+
+
+addBTn.addEventListener("click", () => {
+    console.log("clicked");
+    heading.innerText = "who are you";
+    heading.style.backgroundColor = "red";
+    heading.style.color = "white";
+    heading.style.padding = "20px";
+});
+
+addBTn.addEventListener ("dblclick", () => {
+    addBTn.style.backgroundColor = "purple";
+    addBTn.style.color = "white";
+    addBTn.style.padding = "20px";
+    addBTn.style.border =  "none";
+});
+
+input.addEventListener("change",(e) => {
+    console.log(e.target.value);
+});
 
 
 
