@@ -922,32 +922,67 @@
 
 
 
-const heading  = document.getElementById("heading");
-const box1  = document.getElementById("box1");
-const addBTn  = document.getElementById("addBTn");
- let input = document.getElementById("newInput");
+// const heading  = document.getElementById("heading");
+// const box1  = document.getElementById("box1");
+// const addBTn  = document.getElementById("addBTn");
+//  let input = document.getElementById("newInput");
 
 
-addBTn.addEventListener("click", () => {
-    console.log("clicked");
-    heading.innerText = "who are you";
-    heading.style.backgroundColor = "red";
-    heading.style.color = "white";
-    heading.style.padding = "20px";
+// addBTn.addEventListener("click", () => {
+//     console.log("clicked");
+//     heading.innerText = "who are you";
+//     heading.style.backgroundColor = "red";
+//     heading.style.color = "white";
+//     heading.style.padding = "20px";
+// });
+
+// addBTn.addEventListener ("dblclick", () => {
+//     addBTn.style.backgroundColor = "purple";
+//     addBTn.style.color = "white";
+//     addBTn.style.padding = "20px";
+//     addBTn.style.border =  "none";
+// });
+
+// input.addEventListener("change",(e) => {
+//     console.log(e.target.value);
+// });
+   
+
+
+
+const input = document.getElementById("myInput");
+const addBtn = document.getElementById("addBtn");
+const removeBtn =  document.getElementById("removeBtn");
+
+// const myfunc = ()=>{
+// sessionStorage.setItem("key1",input.value);
+// };
+// addBtn.addEventListener("click", myfunc);
+
+// alert(sessionStorage.getItem("key1"));
+
+
+
+
+const myfunc = ()=>{
+ localStorage.setItem
+    ("key1"),
+    JSON.stringify({name:"shyam giri", age:23 ,})
+ };
+  
+    
+    addBtn.addEventListener("click", myfunc);
+
+removeBtn.addEventListener("click", () => {
+localStorage.clear();
+
+
 });
-
-addBTn.addEventListener ("dblclick", () => {
-    addBTn.style.backgroundColor = "purple";
-    addBTn.style.color = "white";
-    addBTn.style.padding = "20px";
-    addBTn.style.border =  "none";
-});
-
-input.addEventListener("change",(e) => {
-    console.log(e.target.value);
-});
-
-
+ 
+    if(localStorage.getItem("key1")){
+    console.log(JSON.parse(localStorage.getItem("key1")))
+ };
+    
 
 
 
