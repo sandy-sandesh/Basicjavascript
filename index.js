@@ -950,9 +950,9 @@
 
 
 
-const input = document.getElementById("myInput");
-const addBtn = document.getElementById("addBtn");
-const removeBtn =  document.getElementById("removeBtn");
+// const input = document.getElementById("myInput");
+// const addBtn = document.getElementById("addBtn");
+// const removeBtn =  document.getElementById("removeBtn");
 
 // const myfunc = ()=>{
 // sessionStorage.setItem("key1",input.value);
@@ -964,43 +964,144 @@ const removeBtn =  document.getElementById("removeBtn");
 
 
 
-const myfunc = ()=>{
- localStorage.setItem
-    ("key1"),
-    JSON.stringify({name:"shyam giri", age:23 ,})
- };
+// const myfunc = ()=>{
+//  localStorage.setItem
+//     ("key1"),
+//     JSON.stringify({name:"shyam giri", age:23 ,})
+//  };
   
     
-    addBtn.addEventListener("click", myfunc);
+//     addBtn.addEventListener("click", myfunc);
 
-removeBtn.addEventListener("click", () => {
-localStorage.clear();
+// removeBtn.addEventListener("click", () => {
+// localStorage.clear();
 
 
-});
+// });
  
-    if(localStorage.getItem("key1")){
-    console.log(JSON.parse(localStorage.getItem("key1")))
- };
+//     if(localStorage.getItem("key1")){
+//     console.log(JSON.parse(localStorage.getItem("key1")))
+//  };
     
 
 
+// Math (object)
+// console.log(Math.random());
+
+// pow
+// console.log(Math.pow(2, 6));
+
+// square
+// console.log(Math.sqrt(25));
+
+// round
+// let num = 4.7;
+// let result = Math.round(num);
+// console.log(result);
+
+
+// floor
+// let num = 4.7;
+// let result = Math.floor(num);
+//  console.log(result);
+
+// ceil
+// let num = 4.7;
+// let result = Math.ceil(num);
+//  console.log(result);
+
+// trunc
+// let num = 4.7;
+// let result = Math.trunc(num);
+//   console.log(result);
+
+// abs
+// function AbsValue(a,b){
+//     return a-b
+// }
+// let result = AbsValue(3, 7);
+// console.log(result);
+
+// math.abs
+// function AbsValue(a,b){
+//     return a-b
+// }
+// let result = AbsValue(3, 7);
+// console.log(result);
+
+// console.log(Math.PI);
+
+// Area f circle
+
+// function AreaofCircle(radius){
+// return Math.PI * radius * radius;
+
+// }
+// let result = AreaofCircle(5);
+// console.log(result);
+
+// OTP
+//  function generateOTP(){
+//     return Math.floor(10000+ Math.random()*90000);
+//  }
+// let output = generateOTP();
+// console.log(output);
+
+
+// Date
+// const now = new Date();
+//     console.log(now);
+
+// let year = now.getFullYear();
+// console.log(year);
+
+
+// month
+// let month = now.getMonth();
+// console.log(month);
+
+// day
+// let day = now.getDay();
+// console.log(day);
+
+// hours
+// let hours= now.getHours();
+// console.log(hours);
+
+
+// set timeout
+
+// const myfunc = ()=>{
+//     console.log("Suarya Airlines kins kasari crash bhayoo")
+// }
+// setTimeout(myfunc, 2000);
+
+
+// setTimeout(() =>{
+//     console.log("Suarya Airlines kins kasari crash bhayoo")
+// }, 2000);
 
 
 
+// let intervalId = setInterval(() => {
+//     console.log("Suarya Airlines kins kasari crash bhayoo")
+// }, 1000);
+
+// setTimeout(()=>{
+//     clearInterval(intervalId);
+// }, 5000);
 
 
+// Clock 
 
+function updateClock(){
+   let clock =  document.querySelector(".clock")
+   let now = new Date();
 
+   let hours = now.getHours().toString().padStart(2, "0");
+   let minutes = now.getMinutes().toString().padStart(2, "0");
+   let seconds = now.getSeconds().toString().padStart(2, "0");
 
-
-
-
-
-
-
-
-
-
-
-
+   clock.innerHTML = `${hours}:${minutes}:${seconds}`;
+}
+setInterval(updateClock, 1000);

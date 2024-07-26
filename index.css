@@ -1,6 +1,12 @@
-#hello{
+/* #hello{
     background-color: rgb(150, 152, 146);
     color: white;
     text-align: center;
     font-size: 100px;
+} */
+
+.clock{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 20px;
 }
