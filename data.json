@@ -1,0 +1,13 @@
+{
+"person":{
+    "name":"samuel surkheti",
+    "age":20,
+    "isMarried":true
+},
+"products":[{
+    "name":"product1",
+    "price":"10.99",
+    "description":"this is product 1",
+    "instock":true
+}]
+}

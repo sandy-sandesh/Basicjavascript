@@ -1094,14 +1094,131 @@
 
 // Clock 
 
-function updateClock(){
-   let clock =  document.querySelector(".clock")
-   let now = new Date();
+// function updateClock(){
+//    let clock =  document.querySelector(".clock")
+//    let now = new Date();
 
-   let hours = now.getHours().toString().padStart(2, "0");
-   let minutes = now.getMinutes().toString().padStart(2, "0");
-   let seconds = now.getSeconds().toString().padStart(2, "0");
+//    let hours = now.getHours().toString().padStart(2, "0");
+//    let minutes = now.getMinutes().toString().padStart(2, "0");
+//    let seconds = now.getSeconds().toString().padStart(2, "0");
 
-   clock.innerHTML = `${hours}:${minutes}:${seconds}`;
+//    clock.innerHTML = `${hours}:${minutes}:${seconds}`;
+// }
+// setInterval(updateClock, 1000);
+
+
+
+// function BankAccount(customerName,balance){
+//     this.customerName = customerName;
+//     this.balance = balance;
+//     this.accountNumber = Date.now();
+// }
+
+// const ramAccount = new BankAccount("Ram Thapa", 5000);
+// const sitaAccount = new BankAccount("Sita Neupane", 9000);
+// console.log(ramAccount);
+// console.log(sitaAccount);
+
+// CLASS(OOP)
+// class BankAccount{
+//     constructor(customerName, balance){
+//         this.customerName = customerName;
+//         this.balance = balance;
+//         this.acoountNumber = Date.now();
+//     }
+
+//     deposit(amount){
+//         this.balance += amount;
+//     }
+//     withdraw(amount){
+//         this.balance -= amount;
+//     }
+// }
+// class SavingAccount extends BankAccount{
+//     constructor(customerName, balance){
+//         super(customerName, balance);
+//         this.transactionLimit = 50000;
+//     }
+
+//     takePersonalLoan(amount,taxRate){
+//         let ans = amount + (amount * taxRate) / 100;
+//         console.log(`Your Personal Loan is : ${ans}`);
+//     }
+// }
+
+// const unishAccount = new SavingAccount ("Unish Phyal", 5000);
+// const supreeyaAccount = new SavingAccount ("Supreeya Phyal", 8000);
+// console.log(unishAccount.balance)
+// unishAccount.deposit(6000);
+// unishAccount.withdraw(3000);
+// console.log(supreeyaAccount.balance)
+// supreeyaAccount.deposit(3000);
+
+// unishAccount.takePersonalLoan(90000, 12)
+
+// console.log(unishAccount)
+
+
+
+// class BankAccount{
+//     customerName;
+//     #balance;
+//     accountNumber;
+
+//     constructor(customerName, balance){
+//         this.customerName = customerName;
+//         this.#balance = balance;
+//         this.accountNumber = Date.now();
+//     }
+
+// setBalance(amount){
+//     this.#balance += amount
+// }
+// getBalance(amount){
+//     return this.#balance;
+// }
+//     deposit(amount) {
+//         this.#balance += amount;
+//         this.#logTransactions("deposit",amount);
+//     }
+//     withdraw(amount) {
+//         this.#balance -= amount;
+//         this.#logTransactions("withdraw",amount);
+//     }
+//     #logTransactions(type,amount){
+//         console.log(`Transactions Type: ${type} Amount: ${amount}`)
+//     }
+// }
+// const ramAccount = new BankAccount("Ram Thapa", 3000);
+// const laxmanAccount = new BankAccount("Laxman singh", 4000);
+// ramAccount.deposit(9000);
+// ramAccount.setBalance(7000);
+// console.log(ramAccount.getBalance());
+// console.log(ramAccount, laxmanAccount);
+
+
+// static property And method
+
+class User{
+    static studentUsers = 0;
+
+    constructor(name,age,isMarried){
+        this.name = name;
+        this.age = age;
+        this.isMarried = isMarried;
+        User.studentUsers +=1
+    }
+    static sortByage(a,b){
+        return a.age - b.age;
+    }
 }
-setInterval(updateClock, 1000);
+
+ let user1 = new User("Hari Maharjan",36,"UnMarried");
+ let user2 = new User("samuel surkheti",37,"Married to kabigya");
+ let user3 = new User("shyam nepali",35,"UnMarried");
+ let user4 = new User("Ram Thapa",20,"Married");
+
+ users = [ user1, user2,user3,user4];
+ let output = users.sort(User.sortByAge);
+ console.log(output);
+ console.log(User.studentUsers);
