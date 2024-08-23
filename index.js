@@ -1199,26 +1199,86 @@
 
 // static property And method
 
-class User{
-    static studentUsers = 0;
+// class User{
+//     static studentUsers = 0;
 
-    constructor(name,age,isMarried){
-        this.name = name;
-        this.age = age;
-        this.isMarried = isMarried;
-        User.studentUsers +=1
-    }
-    static sortByage(a,b){
-        return a.age - b.age;
-    }
-}
+//     constructor(name,age,isMarried){
+//         this.name = name;
+//         this.age = age;
+//         this.isMarried = isMarried;
+//         User.studentUsers +=1
+//     }
+//     static sortByage(a,b){
+//         return a.age - b.age;
+//     }
+// }
 
- let user1 = new User("Hari Maharjan",36,"UnMarried");
- let user2 = new User("samuel surkheti",37,"Married to kabigya");
- let user3 = new User("shyam nepali",35,"UnMarried");
- let user4 = new User("Ram Thapa",20,"Married");
+//  let user1 = new User("Hari Maharjan",36,"UnMarried");
+//  let user2 = new User("samuel surkheti",37,"Married to kabigya");
+//  let user3 = new User("shyam nepali",35,"UnMarried");
+//  let user4 = new User("Ram Thapa",20,"Married");
 
- users = [ user1, user2,user3,user4];
- let output = users.sort(User.sortByAge);
- console.log(output);
- console.log(User.studentUsers);
+//  users = [ user1, user2,user3,user4];
+//  let output = users.sort(User.sortByAge);
+//  console.log(output);
+//  console.log(User.studentUsers);
+
+
+
+// const  myfunc = (name, age) => {
+//  this.name = name;
+//  this.age = age;
+
+// };
+//  const user1 = new myfunc("Ram",45);
+//  console.log(user1);
+
+
+// arguments
+
+
+// function myfunc(){
+//     console.log(arguments);
+
+// }  
+// myfunc(1, 2, 3, 4);
+
+
+
+
+// const myfunc = () => {
+    
+//         console.log(arguments);
+    
+// };
+//     myfunc(1, 2, 3, 4);
+
+
+
+// hoisting in  JAVAscript
+
+
+// const x = 90;   
+// console.log(x);
+
+
+
+// function In hoisting
+
+//  let result = sum(5, 7);
+//  console.log(result);
+
+//  function Sum(a, b ){
+//     return a + b;
+//  }
+
+//  Arrow function 
+
+
+const sum  = (a, b) => {
+    return a +  b;
+
+};
+let result = sum(5, 7);
+console.log(result);
+

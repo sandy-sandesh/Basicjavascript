@@ -124,7 +124,7 @@ const fetchedData = async (target) => {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  if (input.value.trim() === "") {
+  if (input.value.trim == "") {
     alert("Please enter a city name");
   } else {
     target = input.value;
